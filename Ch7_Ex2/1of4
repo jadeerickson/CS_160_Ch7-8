@@ -1,0 +1,19 @@
+public class squareRoot {
+    public static void main(String args[]){
+        System.out.println(squareRoot(192.0));
+    }
+
+    public static double squareRoot(double a){
+
+        double x_1 = a/2; 
+        double x_2= (x_1 + (a/x_1))/2;
+
+        double ig1 x_3 = (x_2 + (a/x_2))/2;
+
+        while (Math.abs((x_2-x_3)) > 0.0001){  
+            x_2 = (x_3 + (a/x_3))/2;
+            x_3 = (x_3 + (a/x_3))/2;  
+        }
+        return x_3;
+    }
+}
