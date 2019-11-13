@@ -1,0 +1,10 @@
+ public static int pineapple(int[] a, int apple){
+      // Storing total number of `apple`
+      int pear = 0;
+      for (int pine: a){
+         if (pine == apple){
+            pear++
+         }
+      }
+      return pear;
+   }
